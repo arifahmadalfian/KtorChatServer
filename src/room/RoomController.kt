@@ -1,5 +1,6 @@
 package com.arifahmadalfian.room
 
+import com.arifahmadalfian.data.IMessageDataSource
 import com.arifahmadalfian.data.MessageDataSource
 import com.arifahmadalfian.data.model.Message
 import io.ktor.http.cio.websocket.*
@@ -8,7 +9,7 @@ import kotlinx.serialization.json.Json
 import java.util.concurrent.ConcurrentHashMap
 
 class RoomController(
-    private val messageDataSource: MessageDataSource
+    private val messageDataSource: IMessageDataSource
 ) {
     private val members = ConcurrentHashMap<String, Member>()
 

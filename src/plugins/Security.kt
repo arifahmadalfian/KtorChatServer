@@ -1,6 +1,5 @@
 package com.arifahmadalfian.plugins
 
-
 import com.arifahmadalfian.session.ChatSession
 import io.ktor.application.*
 import io.ktor.sessions.*
